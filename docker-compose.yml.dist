@@ -38,7 +38,7 @@ services:
       - docker-dev-env-for-symfony-network
     depends_on:
       - docker-dev-env-for-symfony-postgres
-      
+
   docker-dev-env-for-symfony-postgres:
     container_name: docker-dev-env-for-symfony-postgres
     image: postgres:14-alpine
