@@ -17,9 +17,9 @@ class NewProjectController extends AbstractController
 {
     public function __construct(
         private readonly EntityManagerInterface $entityManager,
-        private readonly AreaRepository $areaRepo) {
+        private readonly AreaRepository $areaRepo)
+    {
     }
-
 
     #[Route('/new-project', name: 'app_new_project')]
     public function __invoke(Request $request, string $photoDir): Response
@@ -30,12 +30,12 @@ class NewProjectController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            if ($photo = $form['photo']->getData()){
+            if ($photo = $form['photo']->getData()) {
                 $filename = bin2hex(random_bytes(6)).'.'.$photo->guessExtension();
 
                 try {
                     $photo->move($photoDir, $filename);
-                }catch (FileException $e) {
+                } catch (FileException $e) {
                     UnableToLoadPhotoException::unableToLoad();
                 }
             }
