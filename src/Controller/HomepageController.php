@@ -14,7 +14,6 @@ class HomepageController extends AbstractController
     ) {
     }
 
-
     #[Route('/', name: 'app_homepage')]
     public function __invoke(): Response
     {

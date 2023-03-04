@@ -18,7 +18,7 @@ class ProjectFormType extends AbstractType
         $builder
             ->add('area', ChoiceType::class, [
                 'mapped' => false,
-                'choices'  => [
+                'choices' => [
                     'Selecione uma... ' => null,
                     'Infraetrutura' => '1',
                     'Metais e Minerais' => '2',
@@ -32,8 +32,8 @@ class ProjectFormType extends AbstractType
                 'required' => false,
                 'mapped' => false,
                 'constraints' => [
-                    new Image(['maxSize' => '4096k'])
-                ]
+                    new Image(['maxSize' => '4096k']),
+                ],
             ])
             ->add('apresentar', SubmitType::class)
 //            ->add('url')
