@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hatch - Consulting engineering and project implementation{% endblock %}
+
+{% block body %}
+    <div class="wrapper">
+        <section class="" style="padding-top: -300px; background-color: #e84a37;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="sidebarBlock richText ">
+                            <img alt="Hatch–CIM Mining and Minerals Project Development Safety Award." src="{{ asset('media/news/Hatch-CIM-safey-award.png') }}?h=288&amp;w=192&amp;hash=BC867AC775E068466475524CF965565A" style="height: 288px; width: 192px; float: right; margin-bottom: 10px; margin-left: 10px;" />
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="maincontent" class="">
+{#            {{ include('sections/_breadcrumb.html.twig') }}#}
+
+            <section class="section-main section-twocolumn-right" style="margin-top: -150px;">
+                <div class="container">
+                    <div class="row">
+                        {{ include('new-project/_container.html.twig') }}
+
+{#                        {{ include('about/_sidebar-nav.html.twig') }}#}
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        {{ include('_footer.html.twig') }}
+
+
+
+    </div>
+{% endblock %}
