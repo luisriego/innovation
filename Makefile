@@ -52,6 +52,6 @@ ssh-be: ## bash into the be container
 
 code-style: ## Runs php-cs to fix code styling following Symfony rules
 	U_ID=${UID} docker exec --user ${UID} ${DOCKER_BE} php-cs-fixer fix src --rules=@Symfony
-
+#vendor/bin/php-cs-fixer fix src
 # .PHONY: migrations
 
