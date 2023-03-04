@@ -1,0 +1,55 @@
+<div class="contentblock ">
+    <div class="navbar navbar-hatch" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">
+                    <img src="{{ asset('media/images/Hatch-Corporate-Logo.png') }}?h=37&amp;iar=0&amp;w=231&amp;hash=2D56EB798FA50C697BA80C24608AE5AA" alt="Hatch" width="231" height="37" />
+                </a>
+            </div>
+{#            <div class="navbar-right" data-controller="languages" data-action="change->languages#toggle" data-language-target>#}
+{#                <select id="languageToggle" class="language-toggle">#}
+{#                    <option class='active' value="pt-BR" selected>Português</option>#}
+{#                    <option class='' value="en" >English</option>#}
+{#                    <!-- <option class='' value="es-CL" >Espa&#241;ol</option>#}
+{#                    <option class='' value="fr-CA" >Fran&#231;ais</option> -->#}
+{#                </select>#}
+
+{#                <div id="search-box-typeahead" class="search-group">#}
+{#                    <input aria-label="Search terms" class="search-control" id="q" name="q" onkeyup="BingSearch(event)" placeholder="Search" title="Search terms" type="text" value="" />#}
+{#                    <button title="Search" class="btn btn-link btn-search" type="button" onclick="SearchBoxGo();">#}
+{#                        <span id="searchboxicon" class="glyphicon glyphicon-search"></span>#}
+{#                    </button>#}
+{#                </div>#}
+
+{#            </div>#}
+            <div class="navbar-collapse collapse">
+                <nav>
+                    <ul class="nav navbar-nav collapse" data-controller="nav">
+                        <li class="">
+                            <a title="Projects" href="https://www.hatch.com/Projects" target="_blank">Projetos</a>
+                        </li>
+                        <li class="">
+                            <a title="Careers" href="https://jobs.hatch.com/" target="_blank">Carreiras</a>
+                        </li>
+                        <li class="">
+                            <a title="About" href="{{ path('app_about_us') }}">Sobre nós</a>
+                        </li>
+{#                        <li class="">#}
+{#                            {% if is_granted('ROLE_ADMIN') %}#}
+{#                                <a href="{{ path('admin_dashboard') }}">Administração</a>#}
+{#                            {% else %}#}
+{#                                <a href="{{ path('login') }}">Login</a>#}
+{#                            {% endif %}#}
+{#                        </li>#}
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
